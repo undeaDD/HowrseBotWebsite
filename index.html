@@ -1,235 +1,350 @@
 <!doctype html>
 <html lang="de">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="google-site-verification" content="1dVwp1d6F-PBKpvrG-E3EARf_myu95mFe0UReRUFXb4" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>Hello, world!</title>
-	
-	<style>
-		body {
-			background-color: #e1e18b;
-		}
+    <title>HowrseBot</title>
+
+    <style>
+        body {
+            background-color: #e1e18b;
+        }
+        
+        .masthead {
+            height: 100vh;
+            min-height: 500px;
+            background-image: url('assets/img/header.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        #showcaseImage {
+            box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.38);
+        }
+        
+        #downloadButton {
+            margin: 10px;
+            width: 180px;
+        }
+        
+        #donateButton {
+            margin: 10px;
+            width: 180px;
+        }
+        
+        button i {
+            margin-left: 10px;
+        }
+        
+        li a {
+            width: 50px;
+            margin-left: 10px;
+        }
 		
-		.masthead {
-			height: 100vh;
-			min-height: 500px;
-			background-image: url('assets/img/header.jpg');
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
+		table {
+			border-radius: 10px;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
 		}
-		
-		#showcaseImage {
-			box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.38);
+
+		.imgRounded, .card {
+			border-radius: 10px;
 		}
-				
-		#downloadButton {
-			margin: 10px;
-			width: 180px;
+
+		.borderless td, .borderless th {
+			border: none;
 		}
-		
-		#donateButton {
-			margin: 10px;
-			width: 180px;
-		}
-		
-		button i {
-			margin-left: 10px;
-		}
-		
-		li a {
-			width: 50px;
-			margin-left: 10px;
-		}
-	</style>
-	<script src="https://kit.fontawesome.com/e7467c49ed.js"></script>
+
+    </style>
+    <script src="https://kit.fontawesome.com/e7467c49ed.js"></script>
 </head>
+
 <body>
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand navbar-dark bg-dark  text-light shadow fixed-top">
-	  <div class="container">
-		<a class="navbar-brand">
-			<img src="assets/img/logo.ico" width="30" height="30" class="d-inline-block align-top">
-			<span class="d-none d-sm-inline">HowrseBot</span>
-		</a>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-		  <ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-			  <a id="navDiscordButton" class="nav-link btn btn-sm btn-secondary text-white" href="#"><i class="fab fa-discord"></i></a>
-			</li>
-			<li class="nav-item">
-			  <a id="navDonateButton" class="nav-link btn btn-sm btn-success text-white" href="#"><i class="fab fa-paypal"></i></a>
-			</li>
-			<li class="nav-item">
-			  <a id="navDownloadButton" class="nav-link btn btn-sm btn-primary text-white" href="#"><i class="fab fa-windows"></i></a>
-			</li>
-		  </ul>
-		</div>
-	  </div>
-	</nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark  text-light shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="assets/img/logo.ico" width="30" height="30" class="d-inline-block align-top">
+                <span class="d-none d-sm-inline">HowrseBot</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="navDiscordButton" class="nav-link btn btn-sm btn-secondary text-white" href="#"><i class="fab fa-discord"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navDonateButton" class="nav-link btn btn-sm btn-success text-white" href="#"><i class="fab fa-paypal"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navDownloadButton" class="nav-link btn btn-sm btn-primary text-white" href="#"><i class="fab fa-windows"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<!-- Full Page Image Header with Vertically Centered Content -->
-	<header class="masthead">
-	  <div class="container h-100">
-		<div class="row h-100 align-items-center">
-		  <div class="col-12 text-center">
-			<img id="showcaseImage" src="assets/img/showcase.jpg" width="60%"></img>
-			<br><br>
-			<button id="donateButton" type="button" class="btn btn-success btn-lg">Donate <i class="fab fa-paypal"></i></button>
-			<button id="downloadButton" type="button" class="btn btn-primary btn-lg">Download <i class="fab fa-windows"></i></button>
-		  </div>
-		</div>
-	  </div>
-	</header>
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <img id="showcaseImage" src="assets/img/showcase.jpg" width="80%"></img>
+                    <br><br>
+                    <button id="donateButton" type="button" class="btn btn-success btn-lg">Donate <i class="fab fa-paypal"></i></button>
+                    <button id="downloadButton" type="button" class="btn btn-primary btn-lg">Download <i class="fab fa-windows"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-	<!-- Page Content -->
-	<section class="py-5">
-	  <div class="container">
-		<h2>Statistics</h2>
-	  </div>
-	</section>
-	
-	<section class="py-5">
-	  <div class="container">
-		<h2>Features</h2>
-		
-		<div class="card">
-			<table class="table table-hover">
-			  <thead class="thead-light">
-				<tr>
-				  <th scope="col">Name</th>
-				  <th scope="col">Free</th>
-				  <th scope="col">VIP</th>
-				</tr>
-			  </thead>
-			  <tbody>
-			  	<tr>
-				  <th scope="row">Care Actions</th>
-				  <td>Yes</td>
-				  <td>Yes</td>
-				</tr>
-				<tr>
-				  <th scope="row">Stats Automation</th>
-				  <td>Yes</td>
-				  <td>Yes</td>
-				</tr>
-				<tr>
-				  <th scope="row">Mission Automation</th>
-				  <td>Yes</td>
-				  <td>Yes</td>
-				</tr>
-				<tr>
-				  <th scope="row">Ufo Automation</th>
-				  <td>Yes</td>
-				  <td>Yes</td>
-				</tr>
-				<tr>
-				  <th scope="row">Horse Limits</th>
-				  <td>300</td>
-				  <td>-</td>
-				</tr>
-				<tr>
-				  <th scope="row">Discord Access</th>
-				  <td>Yes</td>
-				  <td>Yes</td>
-				</tr>
-				<tr>
-				  <th scope="row">Support</th>
-				  <td>Discord</td>
-				  <td>Private & Discord</td>
-				</tr>
-				<tr>
-				  <th scope="row">Feature requests</th>
-				  <td>-</td>
-				  <td>Yes</td>
-				</tr>
-				<tr>
-				  <th scope="row">Mobile App</th>
-				  <td>-</td>
-				  <td>In progress</td>
-				</tr>
-			  </tbody>
-			</table>
-		</div>
-	  </div>
-	</section>
-	
-	<section class="py-5">
-	  <div class="container">
-		<h2>About Us</h2>
-	  </div>
-	</section>
-	
-	<section class="py-5">
-	  <div class="container">
-		<h2>FAQ</h2>
-		
-		<div class="accordion" id="accordionExample">
-		  <div class="card">
-			<div class="card-header" id="headingOne">
-			  <h2 class="mb-0">
-				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				  Collapsible Group Item #1
-				</button>
-			  </h2>
-			</div>
+    <!-- Page Content -->
+    <section class="py-4">
+        <div class="container">
+            <h2>Statistics</h2>
+			<div class="row">
 
-			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-			  <div class="card-body">
-				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-			  </div>
-			</div>
-		  </div>
-		  <div class="card">
-			<div class="card-header" id="headingTwo">
-			  <h2 class="mb-0">
-				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				  Collapsible Group Item #2
-				</button>
-			  </h2>
-			</div>
-			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-			  <div class="card-body">
-				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-			  </div>
-			</div>
-		  </div>
-		  <div class="card">
-			<div class="card-header" id="headingThree">
-			  <h2 class="mb-0">
-				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				  Collapsible Group Item #3
-				</button>
-			  </h2>
-			</div>
-			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-			  <div class="card-body">
-				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	</section>
-	
-	<footer class="container">
-        <p class="float-right"><a class="btn btn-sm btn-secondary text-white px-2" href="#">Back to top</a></p>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card text-white bg-dark h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-light text-uppercase mb-1">Users</div>
+                      <div class="h5 mb-0 font-weight-bold text-muted">3</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-users fa-2x text-muted"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card text-white bg-dark h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-light text-uppercase mb-1">Downloads</div>
+                      <div class="h5 mb-0 font-weight-bold text-muted">15</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-arrow-down fa-2x text-muted"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card text-white bg-dark h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-light text-uppercase mb-1">Managed Horses</div>
+                      <div class="h5 mb-0 font-weight-bold text-muted">1502</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-tasks fa-2x text-muted"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card text-white bg-dark border-left-warning h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-light text-uppercase mb-1">Banned Accounts</div>
+                      <div class="h5 mb-0 font-weight-bold text-muted">0</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-eye fa-2x text-muted"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+			<h2>Features</h2>
+            <div class="table-responsive">
+                <table class="table borderless table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="text-center">Free</th>
+                            <th class="text-center">Donator</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><strong>Care Actions</th>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Stats Automation</th>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Mission Automation</th>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Ufo Automation</th>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                        </tr>
+						<tr>
+                            <th>Discord Access</th>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Horse Limits</th>
+                            <td class="text-center"><strong>300</strong></td>
+                            <td class="text-center"><i class="fas fa-infinity"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Support</th>
+                            <td class="text-center"><i class="fas fa-times"></i></td>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Feature requests</th>
+                            <td class="text-center"><i class="fas fa-times"></i></td>
+                            <td class="text-center"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th>Mobile App</th>
+                            <td class="text-center"><i class="fas fa-times"></i></td>
+                            <td class="text-center"><strong>WIP</strong></td>
+                        </tr>
+						<tr>
+							<th colspan=3>No warranty. Use HowrseBot at own risk</th>
+						</tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <h2>FAQ</h2>
+
+            <div class="accordion" id="accordionExample">
+                
+				<div class="card text-white bg-dark">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse1">
+                        <p class="mb-0">
+							<strong>Q: Title 1</strong>
+						</p>
+                    </a>
+
+                    <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A: Text
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse2">
+                        <p class="mb-0">
+							<strong>Q: Title 2</strong>
+						</p>
+                    </a>
+
+                    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A: Text
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse3">
+                        <p class="mb-0">
+							<strong>Q: Title 3</strong>
+						</p>
+                    </a>
+
+                    <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A: Text
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse4">
+                        <p class="mb-0">
+							<strong>Q: Title 4</strong>
+						</p>
+                    </a>
+
+                    <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A: Text
+                        </div>
+                    </div>
+                </div>
+
+				<div class="card text-white bg-dark">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse5">
+                        <p class="mb-0">
+							<strong>Q: Title 5</strong>
+						</p>
+                    </a>
+
+                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A: Text
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+	<section class="py-4">
+        <div class="container">
+            <h2>About Us</h2>
+        </div>
+    </section>
+
+    <footer class="container">
+        <p class="float-right"><a class="btn btn-sm btn-dark text-white px-2" href="#">Back to top</a></p>
         <p>
-			© 2019 DeltaSiege.eu 
-			<a class="btn btn-sm btn-secondary text-white ml-2 px-2" href="#">Privacy</a>
-			<a class="btn btn-sm btn-secondary text-white ml-2 px-2" href="#">Terms</a>
-		</p>
+            <span class="d-none d-sm-inline">© 2019 DeltaSiege.eu</span>
+            <a class="btn btn-sm btn-dark text-white ml-2 px-2" href="#">Privacy</a>
+            <a class="btn btn-sm btn-dark text-white ml-2 px-2" href="#">Terms</a>
+        </p>
     </footer>
 
-	<script>
-		document.getElementById("navDownloadButton").disabled = !(navigator.platform.indexOf('Win') > -1);
-		document.getElementById("downloadButton").disabled = !(navigator.platform.indexOf('Win') > -1);
-	</script>
+    <script>
+        document.getElementById("navDownloadButton").disabled = !(navigator.platform.indexOf('Win') > -1);
+        document.getElementById("downloadButton").disabled = !(navigator.platform.indexOf('Win') > -1);
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
