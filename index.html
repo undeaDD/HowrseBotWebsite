@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="google-site-verification" content="1dVwp1d6F-PBKpvrG-E3EARf_myu95mFe0UReRUFXb4" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>HowrseBot</title>
 
@@ -81,10 +80,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a id="navDiscordButton" class="nav-link btn btn-sm btn-secondary text-white" href="#"><i class="fab fa-discord"></i></a>
+                        <a id="navDiscordButton" class="nav-link btn btn-sm btn-secondary text-white" href="https://discordapp.com/invite/wQrr8uz"><i class="fab fa-discord"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a id="navDonateButton" class="nav-link btn btn-sm btn-success text-white" href="#"><i class="fab fa-paypal"></i></a>
+                        <a id="navDonateButton" class="nav-link btn btn-sm btn-success text-white" href="https://www.paypal.me/undeaDD/5"><i class="fab fa-paypal"></i></a>
                     </li>
                     <li class="nav-item">
                         <a id="navDownloadButton" class="nav-link btn btn-sm btn-primary text-white" href="#"><i class="fab fa-windows"></i></a>
@@ -101,8 +100,8 @@
                 <div class="col-12 text-center">
                     <img id="showcaseImage" src="assets/img/showcase.jpg" width="80%"></img>
                     <br><br>
-                    <button id="donateButton" type="button" class="btn btn-success btn-lg">Donate <i class="fab fa-paypal"></i></button>
-                    <button id="downloadButton" type="button" class="btn btn-primary btn-lg">Download <i class="fab fa-windows"></i></button>
+                    <a id="donateButton" href="https://www.paypal.me/undeaDD/5" class="btn btn-success btn-lg">Donate <i class="fab fa-paypal"></i></a>
+                    <a id="downloadButton" href="#" class="btn btn-primary btn-lg">Download <i class="fab fa-windows"></i></a>
                 </div>
             </div>
         </div>
@@ -120,7 +119,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="font-weight-bold text-light mb-1">Users</div>
-                      <div class="h5 mb-0 font-weight-bold text-muted">3</div>
+                      <div id="fb_users" class="h5 mb-0 font-weight-bold text-muted"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-users fa-2x text-muted"></i>
@@ -136,7 +135,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="font-weight-bold text-light mb-1">Downloads</div>
-                      <div class="h5 mb-0 font-weight-bold text-muted">15</div>
+                      <div id="fb_downloads" class="h5 mb-0 font-weight-bold text-muted"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-arrow-down fa-2x text-muted"></i>
@@ -152,7 +151,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="font-weight-bold text-light mb-1">Managed Horses</div>
-                      <div class="h5 mb-0 font-weight-bold text-muted">1502</div>
+                      <div id="fb_horses" class="h5 mb-0 font-weight-bold text-muted"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-tasks fa-2x text-muted"></i>
@@ -169,7 +168,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="font-weight-bold text-light mb-1">Banned Accounts</div>
-                      <div class="h5 mb-0 font-weight-bold text-muted">0</div>
+                      <div id="fb_banned" class="h5 mb-0 font-weight-bold text-muted"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-eye fa-2x text-muted"></i>
@@ -284,23 +283,9 @@
                 </div>
 
                 <div class="card text-white bg-dark">
-                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse2">
-                        <p class="mb-0">
-							<strong>Q: Instructions</strong>
-						</p>
-                    </a>
-
-                    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                            A:
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card text-white bg-dark">
                     <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse3">
                         <p class="mb-0">
-							<strong>Q: MacOS / Linux / Other</strong>
+							<strong>Q: Instructions</strong>
 						</p>
                     </a>
 
@@ -314,11 +299,25 @@
                 <div class="card text-white bg-dark">
                     <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse4">
                         <p class="mb-0">
-							<strong>Q: Support / Help</strong>
+							<strong>Q: MacOS / Linux / Other</strong>
 						</p>
                     </a>
 
                     <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A:
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse5">
+                        <p class="mb-0">
+							<strong>Q: Support / Help</strong>
+						</p>
+                    </a>
+
+                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
                             A: 
                         </div>
@@ -326,13 +325,13 @@
                 </div>
 
 				<div class="card text-white bg-dark">
-                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse5">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse6">
                         <p class="mb-0">
 							<strong>Q: Disclaimer</strong>
 						</p>
                     </a>
 
-                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div id="collapse6" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
                             A:
                         </div>
@@ -340,13 +339,13 @@
                 </div>
 				
 				<div class="card text-white bg-dark">
-                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse5">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse7">
                         <p class="mb-0">
 							<strong>Q: Multiple Accounts / Saves</strong>
 						</p>
                     </a>
 
-                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div id="collapse7" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
                             A:
                         </div>
@@ -354,13 +353,13 @@
                 </div>
 
 				<div class="card text-white bg-dark">
-                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse5">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse8">
                         <p class="mb-0">
 							<strong>Q: Statistics</strong>
 						</p>
                     </a>
 
-                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div id="collapse8" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
                             A:
                         </div>
@@ -407,7 +406,7 @@
 				  <div class="card text-white bg-dark py-2">
 					<div class="card-body w-100">
 						<img src="assets/img/Raphael.jpg" width="120px" height="120px" class="shadow rounded-circle mx-auto d-block mb-4">
-						<h3 class="text-center">SirRaphael</h3>
+						<h3 class="text-center">Raphael</h3>
 						<div class="text-center">
 							<span class="badge badge-primary">Dev</span>
 							<span class="badge badge-secondary">Test</span>
@@ -424,9 +423,9 @@
         <div class="container">
             <h2>Quick Links</h2>
 			
-			<button type="button" class="btn btn-dark mb-2">Howrse.de</button>
-			<button type="button" class="btn btn-dark mb-2">Our Discord</button>
-			<button type="button" class="btn btn-dark mb-2">Preview Video</button>
+			<a href="https://www.howrse.de" class="btn btn-dark mb-2">Howrse.de</a>
+			<a href="https://discordapp.com/invite/wQrr8uz" class="btn btn-dark mb-2">Our Discord</a>
+			<a href="https://www.youtube.com/watch?v=commingsoon" class="btn btn-dark mb-2">Preview Video</a>
 		</div>
 	</section>
 	
@@ -442,7 +441,22 @@
 
     <script>
         document.getElementById("navDownloadButton").style.display = !(navigator.platform.indexOf('Win') > -1) ? "none" : "block";
-        document.getElementById("downloadButton").style.display = !(navigator.platform.indexOf('Win') > -1) ? "none" : "inline";
+        document.getElementById("downloadButton").style.display = !(navigator.platform.indexOf('Win') > -1) ? "none" : "inline-block";
+		
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState === XMLHttpRequest.DONE) {
+				if (xhr.status === 200) {
+					var object = JSON.parse(xhr.responseText);
+					document.getElementById("fb_users").innerText = object.users;
+					document.getElementById("fb_downloads").innerText = object.downloads;
+					document.getElementById("fb_horses").innerText = object.horses;
+					document.getElementById("fb_banned").innerText = object.banned;
+				}
+			}
+		};
+		xhr.open("GET", "https://howrsebot.firebaseio.com/stats.json", true);
+		xhr.send();
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
