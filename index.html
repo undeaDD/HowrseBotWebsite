@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,17 +9,18 @@
     <title>HowrseBot</title>
 
     <style>
-        body {
-            background-color: #e1e18b;
-        }
         
+		body { 
+			background: url('assets/img/header.jpg') no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		
         .masthead {
             height: 100vh;
             min-height: 500px;
-            background-image: url('assets/img/header.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
         }
         
         #showcaseImage {
@@ -58,6 +59,11 @@
 		.borderless td, .borderless th {
 			border: none;
 		}
+		
+		h2 {
+			color: white;
+			text-shadow: #343a40 0px 0px 10px;
+		}
 
     </style>
     <script src="https://kit.fontawesome.com/e7467c49ed.js"></script>
@@ -69,7 +75,7 @@
         <div class="container">
             <a class="navbar-brand">
                 <img src="assets/img/logo.ico" width="30" height="30" class="d-inline-block align-top">
-                <span class="d-none d-sm-inline">HowrseBot</span>
+                <span class="d-none d-sm-inline">HowrseBot <span class="badge badge-secondary">v2.0</span></span>
             </a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -104,7 +110,7 @@
     <!-- Page Content -->
     <section class="py-4">
         <div class="container">
-            <h2>Statistics</h2>
+            <h2>Global Statistics</h2>
 			<div class="row">
 
             <div class="col-xl-3 col-md-6 mb-4">
@@ -112,7 +118,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-light text-uppercase mb-1">Users</div>
+                      <div class="font-weight-bold text-light mb-1">Users</div>
                       <div class="h5 mb-0 font-weight-bold text-muted">3</div>
                     </div>
                     <div class="col-auto">
@@ -128,7 +134,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-light text-uppercase mb-1">Downloads</div>
+                      <div class="font-weight-bold text-light mb-1">Downloads</div>
                       <div class="h5 mb-0 font-weight-bold text-muted">15</div>
                     </div>
                     <div class="col-auto">
@@ -144,7 +150,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-light text-uppercase mb-1">Managed Horses</div>
+                      <div class="font-weight-bold text-light mb-1">Managed Horses</div>
                       <div class="h5 mb-0 font-weight-bold text-muted">1502</div>
                     </div>
                     <div class="col-auto">
@@ -161,7 +167,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-light text-uppercase mb-1">Banned Accounts</div>
+                      <div class="font-weight-bold text-light mb-1">Banned Accounts</div>
                       <div class="h5 mb-0 font-weight-bold text-muted">0</div>
                     </div>
                     <div class="col-auto">
@@ -177,7 +183,7 @@
 
     <section class="py-4">
         <div class="container">
-			<h2>Features</h2>
+			<h2>HowrseBot Features</h2>
             <div class="table-responsive">
                 <table class="table borderless table-dark table-striped">
                     <thead>
@@ -234,7 +240,7 @@
                             <td class="text-center"><strong>WIP</strong></td>
                         </tr>
 						<tr>
-							<th colspan=3>No warranty. Use HowrseBot at own risk</th>
+							<th colspan=3 class="text-muted">No warranty. Use HowrseBot at own risk</th>
 						</tr>
                     </tbody>
                 </table>
@@ -251,13 +257,13 @@
 				<div class="card text-white bg-dark">
                     <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse1">
                         <p class="mb-0">
-							<strong>Q: Title 1</strong>
+							<strong>Q: Requirements</strong>
 						</p>
                     </a>
 
                     <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            A: Text
+                            A:
                         </div>
                     </div>
                 </div>
@@ -265,13 +271,27 @@
                 <div class="card text-white bg-dark">
                     <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse2">
                         <p class="mb-0">
-							<strong>Q: Title 2</strong>
+							<strong>Q: Demo / Video</strong>
 						</p>
                     </a>
 
                     <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            A: Text
+                            A:
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse2">
+                        <p class="mb-0">
+							<strong>Q: Instructions</strong>
+						</p>
+                    </a>
+
+                    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A:
                         </div>
                     </div>
                 </div>
@@ -279,13 +299,13 @@
                 <div class="card text-white bg-dark">
                     <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse3">
                         <p class="mb-0">
-							<strong>Q: Title 3</strong>
+							<strong>Q: MacOS / Linux / Other</strong>
 						</p>
                     </a>
 
                     <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            A: Text
+                            A:
                         </div>
                     </div>
                 </div>
@@ -293,13 +313,13 @@
                 <div class="card text-white bg-dark">
                     <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse4">
                         <p class="mb-0">
-							<strong>Q: Title 4</strong>
+							<strong>Q: Support / Help</strong>
 						</p>
                     </a>
 
                     <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            A: Text
+                            A: 
                         </div>
                     </div>
                 </div>
@@ -307,13 +327,41 @@
 				<div class="card text-white bg-dark">
                     <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse5">
                         <p class="mb-0">
-							<strong>Q: Title 5</strong>
+							<strong>Q: Disclaimer</strong>
 						</p>
                     </a>
 
                     <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            A: Text
+                            A:
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="card text-white bg-dark">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse5">
+                        <p class="mb-0">
+							<strong>Q: Multiple Accounts / Saves</strong>
+						</p>
+                    </a>
+
+                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A:
+                        </div>
+                    </div>
+                </div>
+
+				<div class="card text-white bg-dark">
+                    <a class="card-link card-header" id="headingOne" data-toggle="collapse" data-target="#collapse5">
+                        <p class="mb-0">
+							<strong>Q: Statistics</strong>
+						</p>
+                    </a>
+
+                    <div id="collapse5" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A:
                         </div>
                     </div>
                 </div>
@@ -325,21 +373,75 @@
 	<section class="py-4">
         <div class="container">
             <h2>About Us</h2>
+			<div class="row">
+				
+				<div class="col-xl-3 col-md-4 mb-4">
+				  <div class="card text-white bg-dark py-2">
+					<div class="card-body mx-auto">
+						<img src="assets/img/undeaD_D.png" width="120px" height="120px" class="shadow rounded-circle mx-auto d-block mb-4">
+						<h3 class="text-center">undeaD_D</h3>
+						<div class="text-center">
+							<span class="badge badge-danger align-middle">Admin</span>
+							<span class="badge badge-primary align-middle">Dev</span>
+							<span class="badge badge-success">Design</span>
+						</div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="col-xl-3 col-md-4 mb-4">
+				  <div class="card text-white bg-dark py-2">
+					<div class="card-body mx-auto">
+						<img src="assets/img/Sasimaus.jpg" width="120px" height="120px" class="shadow rounded-circle mx-auto d-block mb-4">
+						<h3 class="text-center">Sasimaus</h3>
+						<div class="text-center">
+							<span class="badge badge-success">Design</span>
+							<span class="badge badge-secondary">Test</span>
+						</div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="col-xl-3 col-md-4 mb-4">
+				  <div class="card text-white bg-dark py-2">
+					<div class="card-body w-100">
+						<img src="assets/img/Raphael.jpg" width="120px" height="120px" class="shadow rounded-circle mx-auto d-block mb-4">
+						<h3 class="text-center">Raphael</h3>
+						<div class="text-center">
+							<span class="badge badge-primary">Dev</span>
+							<span class="badge badge-secondary">Test</span>
+						</div>
+					</div>
+				  </div>
+				</div>
+			
+			</div>
         </div>
     </section>
 
-    <footer class="container">
-        <p class="float-right"><a class="btn btn-sm btn-dark text-white px-2" href="#">Back to top</a></p>
+	<section class="py-4">
+        <div class="container">
+            <h2>Quick Links</h2>
+			
+			<button type="button" class="btn btn-dark mb-2">Howrse.de</button>
+			<button type="button" class="btn btn-dark mb-2">Our Discord</button>
+			<button type="button" class="btn btn-dark mb-2">Preview Video</button>
+		</div>
+	</section>
+	
+    <footer class="container pt-2">
+        <p class="float-right">
+			<a class="btn btn-sm btn-dark text-white px-2" href="#">Back to top <i class="fas fa-arrow-up"></i></a></p>
         <p>
-            <span class="d-none d-sm-inline">© 2019 DeltaSiege.eu</span>
-            <a class="btn btn-sm btn-dark text-white ml-2 px-2" href="#">Privacy</a>
-            <a class="btn btn-sm btn-dark text-white ml-2 px-2" href="#">Terms</a>
+            <span class="d-none d-sm-inline mr-2"><strong>© 2019 DeltaSiege.eu</strong></span>
+            <a class="btn btn-sm btn-dark text-white mr-2 px-2" href="#">Privacy</a>
+            <a class="btn btn-sm btn-dark text-white px-2" href="#">Terms</a>
         </p>
     </footer>
 
     <script>
-        document.getElementById("navDownloadButton").disabled = !(navigator.platform.indexOf('Win') > -1);
-        document.getElementById("downloadButton").disabled = !(navigator.platform.indexOf('Win') > -1);
+        document.getElementById("navDownloadButton").style.display = !(navigator.platform.indexOf('Win') > -1) ? "none" : "block";
+        document.getElementById("downloadButton").style.display = !(navigator.platform.indexOf('Win') > -1) ? "none" : "inline";
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
